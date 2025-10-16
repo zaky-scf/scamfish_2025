@@ -959,11 +959,9 @@ function custom_admin_post_list_css() {
 }
 add_action('admin_head', 'custom_admin_post_list_css');
 
-// // posthog implementation
-// $posthog_class_file = get_template_directory() . '/inc/Posthog_Scf.php';
+// posthog implementation
+$posthog_class_file = get_template_directory() . '/inc/Posthog_Scf.php';
 
-// if ( file_exists( $posthog_class_file ) ) {
-//     require_once $posthog_class_file;
-// }
-
-// $posthog_test_bg_color = Posthog_Scf::getFeatureFlag('bg-color-test', null, 'control');
+if ( file_exists( $posthog_class_file ) ) {
+    require_once $posthog_class_file;
+}

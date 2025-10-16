@@ -310,6 +310,11 @@ p.error,
 #header_2020.no_compact {
 	position: relative;
 }
+
+#header_2020.no_compact.fixed {
+	position: fixed !important;
+}
+
 #header_2020 .main-menu .active .new-sub-menu,
 #header_2020 .main-menu .forgot .section-forgot {
 	display: block;
@@ -1475,10 +1480,16 @@ p.error,
 		display: none;
 	}
 	.search_mb_2020 {
-		display: none; /* ab test */
+		display: block;
 		background-color: #f8f8f8;
 		margin: 16px 0;
 	}
+
+	/* AB test */
+	.search_mb_2020.hidden {
+		display: none;
+	}
+
 	.scf-youtube-ad .search_mb_2020 {
 		display: none;
 	}

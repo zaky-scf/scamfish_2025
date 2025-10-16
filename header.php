@@ -9,4 +9,9 @@
     $fullUrl = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
    
 
+    $posthog_ab_test_search_widget = Posthog_Scf::getFeatureFlag('blog_search_widget', null, 'control');
+
+    // $posthog_ab_test_search_widget = 'show';
+    // $posthog_ab_test_search_widget = 'hidden';
+
     include_once( "template-parts/header.php" );

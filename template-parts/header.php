@@ -201,7 +201,7 @@
 
             }
         ?>
-        <div id="header_2020" class="compact_v2 scf_2020_style no_compact">
+        <div id="header_2020" class="compact_v2 scf_2020_style no_compact <?php if($posthog_ab_test_search_widget == "hidden") echo "ab_test"; ?>">
             <div class="container pos-relative">
                 <div class="row">
                     <div class="<?php echo empty( $hide_main_search ) ? 'col-md-2': 'col-md-8'; ?> col-sm-6 mb-text-center">
@@ -230,7 +230,10 @@
                 <span class="si-search"></span>
             </div>
             <?php
-                echo '<div class="search_mb_2020 search_hide_lg scfb_mb_search">';
+                if($posthog_ab_test_search_widget == 'hidden')
+                    echo '<div class="search_mb_2020 search_hide_lg scfb_mb_search hidden">';
+                else 
+                    echo '<div class="search_mb_2020 search_hide_lg scfb_mb_search">';
                 
                     require get_template_directory() . '/template-parts/search.php'; 
                         
