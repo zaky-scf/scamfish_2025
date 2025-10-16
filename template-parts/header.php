@@ -178,7 +178,7 @@
             $include_popup[] = 'action_required_ris';
             $include_popup[] = 'multiple_faces_detected';
             $include_popup[] = 'improve_image_search';
-            //$include_popup[] = 'blog_sign_up_exit';
+            $include_popup[] = 'blog_sign_up_exit';
 
             if ( ! empty( $include_popup ) && is_array( $include_popup ) ) {
 

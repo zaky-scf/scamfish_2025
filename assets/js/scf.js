@@ -3346,10 +3346,10 @@ $.each( $(this).parent('ul').find('li.al'), function( target, source ) {
                     if (window.location.href.includes("scamfish") || window.location.href.includes("blog")) {
                         $(".scf_2020_style").on( 'mouseout', function(e) {
 
-                            if(event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
+                            // if(event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
 
-                                if (!localStorage.getItem("blogModalEmailSignUp")) {
-                                    localStorage.setItem("blogModalEmailSignUp", "true");
+                                // if (!localStorage.getItem("blogModalEmailSignUp")) {
+                                    // localStorage.setItem("blogModalEmailSignUp", "true");
 
                                     try {
                                         t.modal.show("blog_email_sign_up");
@@ -3386,9 +3386,9 @@ $.each( $(this).parent('ul').find('li.al'), function( target, source ) {
                                         // console.log("Error with modal: blog_email_sign_up_ab_3", e);
                                     }                                    
 
-                                }
+                                // }
 
-                            }
+                            // }
 
                         });
                     }
