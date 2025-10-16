@@ -1475,7 +1475,7 @@ p.error,
 		display: none;
 	}
 	.search_mb_2020 {
-		display: none; /* ab test */
+		display: block;
 		background-color: #f8f8f8;
 		margin: 16px 0;
 	}
